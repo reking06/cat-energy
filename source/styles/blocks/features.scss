@@ -1,0 +1,118 @@
+.features {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.features__title {
+  margin: 0 0 40px;
+  font-family: $font-secondary, "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.features__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  counter-reset: features-num;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 79px;
+  }
+}
+
+.features__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  color: $text-color-primary;
+
+  &--first {
+    --icon: url("../../icons/stack.svg#leaf_icon");
+  }
+
+  &--second {
+    --icon: url("../../icons/stack.svg#cup_icon");
+  }
+
+  &--third {
+    --icon: url("../../icons/stack.svg#eat_icon");
+  }
+
+  &--fourth {
+    --icon: url("../../icons/stack.svg#clock_icon");
+  }
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-primary;
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px 60px;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 31px;
+    width: 246px;
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 118px;
+      z-index: -1;
+      font-family: $font-secondary, "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $text-color-fourth;
+      content: counter(features-num);
+      counter-increment: features-num;
+    }
+  }
+}
+
+.features__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

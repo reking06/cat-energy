@@ -1,0 +1,79 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 290px;
+  padding: 57px 58px 43px;
+  background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $bg-color-primary;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    padding-top: 45px;
+    padding-left: 77px;
+    padding-right: 125px;
+    background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/tablet/offer@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/tablet/offer@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: unset;
+    padding: 56px 42px 42px;
+    background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@2x.jpg");
+    }
+  }
+
+  &::before {
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin-bottom: 47px;
+    background-image: url("../../icons/stack.svg#gift_icon");
+    background-repeat: no-repeat;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 82px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 47px;
+    }
+  }
+}
+
+.offer__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-third;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

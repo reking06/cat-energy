@@ -1,0 +1,41 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-primary;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    width: 162px;
+  }
+
+  &::after {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    mask: url("../../icons/stack.svg#cat_icon") no-repeat;
+    background-color: $additional-color-5;
+    content: "";
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    background-color: $bg-color-primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    background-color: $bg-color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

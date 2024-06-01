@@ -1,0 +1,43 @@
+.section-title {
+  margin: 0;
+  font-family: $font-secondary, "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.section-title--decoration {
+  position: relative;
+  width: fit-content;
+  background-color: $bg-color-fifth;
+  box-shadow: -20px 0 0 0 $bg-color-fifth, 40px 0 0 0 $bg-color-fifth;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: -40px 0 0 0 $bg-color-fifth, 40px 0 0 0 $bg-color-fifth;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 2px;
+    background-color: $bg-color-primary;
+    box-shadow: 100vw 0 0 $bg-color-primary;
+    content: "";
+  }
+}
