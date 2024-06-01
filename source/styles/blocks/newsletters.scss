@@ -1,0 +1,82 @@
+.newsletters {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 105px;
+  }
+}
+
+.newsletters__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.newsletters__title {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.newsletters__text {
+  margin: 0 0 24px;
+  font-family: $font-secondary, "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-secondary;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.newsletters__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+  }
+}
+
+.newsletters__form .form__input {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.newsletters__form .form__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}

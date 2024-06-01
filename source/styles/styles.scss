@@ -1,0 +1,36 @@
+/* VENDOR */
+@import "./../vendor/leaflet/leaflet.scss";
+
+/* COMMON */
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
+/* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/footer-bottom.scss";
+@import "./blocks/main.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/results.scss";
+@import "./blocks/features.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/location.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main-products.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/extra-products.scss";
+@import "./blocks/extra-card.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/newsletters.scss";
+@import "./blocks/form.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/program.scss";
+@import "./blocks/not-found.scss";

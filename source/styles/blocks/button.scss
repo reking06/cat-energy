@@ -1,0 +1,60 @@
+.button {
+  display: block;
+  padding: 10px 20px;
+  font-family: $font-secondary, "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button--primary {
+  color: $text-color-third;
+  background-color: $bg-color-primary;
+
+  &:hover {
+    background-color: $bg-color-sixth;
+  }
+
+  &:focus-visible {
+    background-color: $bg-color-sixth;
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: rgba($text-color-third, 0.3);
+    background-color: $bg-color-sixth;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.button--secondary {
+  color: $text-color-primary;
+  background-color: $bg-color-third;
+
+  &:hover {
+    background-color: $bg-color-seventh;
+  }
+
+  &:focus-visible {
+    background-color: $bg-color-seventh;
+    outline: 2px solid $bg-color-seventh;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: $bg-color-seventh;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
